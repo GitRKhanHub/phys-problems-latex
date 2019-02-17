@@ -9,8 +9,27 @@
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\includegraphics[width = 0.9 \textwidth]{0901LawOfConservationOfEnergyTwoPistons.jpg}
+\includestandalone{Pictures/0901LawOfConservationOfEnergyTwoPistons}
 \end{minipage}
+\begin{sol}
+	По закону сохранения энергии:
+	$$ \frac{m(3v)^2}{2} + \frac{ mv^2}{2} + \frac{3}{2}RT_{0} = 
+	\frac{m u_1^2}{2} + \frac{ mu_2^2}{2} + \frac{3}{2}RT. $$
+	По закону сохранения импульса:
+	$$ m3v + mv = mu_1 + mu_2,$$
+	$$u_{1}=4v-u_{2}.$$
+	Полученное выражение для $u_1$ подставим в записанный закон сохранения энергии:
+	$$5mv^2+\frac{3}{2}RT_{0}-\frac{mu_{2}^2}{2}-\frac{m(4v-u_{2})^2}{2}=\frac{3}{2}RT. \Rightarrow$$
+	$$T=T_{0}+\frac{1}{3R} \left\{10mv^2-mu_{2}^2-m(4v-u_{2})^2\right\},$$
+	$$T=T_{0}+\frac{1}{3R} \left\{10mv^2-mu_{2}^2-16mv^2+8mvu_{2}-mu_{2}^2\right\},$$
+	$$T=T_0+\frac{m}{3R} \left\{-6v^2-2u_{2}^2+8u_{2}v\right\}.$$
+	Таким образом, $T=T \left(u_{2}\right).$
+	Для поиска максимальной температуры применим стандартный метод математического анализа:
+	$$\frac{dT}{du_{2}}=0,$$
+	$$-4u_{2}+8v=0,$$
+	$$u_{2}=2v. \Rightarrow$$
+	$$T_{max} = T\left(2v\right)=T_{0}+\frac{m}{3R}\left\{-6v^2-2\cdot4v^2+8\cdot2v^2\right\}=T_{0}+\frac{2}{3}\frac{mv^2}{R}.$$
+\end{sol}
 \begin{ans}
 $T=T_0+2mv^2/3R$
 \end{ans}
