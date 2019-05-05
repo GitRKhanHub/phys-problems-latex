@@ -2,6 +2,11 @@
 
 \begin{ex}
 Заряженная частица массы $m$ зарядом $q$ влетает в магнитное поле $B$ под углом $\alpha$ со скоростью $v$. По какой траектории движется частица? Каков пространственный период витка (шаг спирали)?
+\begin{sol}
+Представим скорость частицы в виде суммы двух векторов-компонент: $v_{\parallel} = v\cos{\alpha}$ - сонаправлена, а $v_{\perp} = v\sin{\alpha}$ - перпендикулярна вектору магнитной индукции.
+По второму закону Ньютона:$$m\dfrac{v_{\perp}^2}{r} = qBv_{\perp},$$ откуда получаем выражение для радиуса витка спирали: $$r = \dfrac{mv_{\perp}}{qB}.$$
+Находим период движения вдоль витка: $$T = \dfrac{2\pi r}{v_{\perp}} = 2\pi \dfrac{m}{qB}.$$ Шаг спирали $$d = v_{\parallel}T = v\cos{\alpha}T = 2\pi\cos{\alpha}\dfrac{vm}{qB}.$$ 
+\end{sol}
 \begin{ans}
 $d = 2 \pi v \cos \alpha m / qB$
 \end{ans}
@@ -10,6 +15,19 @@ $d = 2 \pi v \cos \alpha m / qB$
 %Ижевск
 \begin{ex}
 По обмотке длинного цилиндрического соленоида радиуса $R$ протекает постоянный ток, создающий внутри соленоида однородное магнитное поле с индукцией $B$. Между витками соленоида в него влетает по радиусу (перпендикулярно оси соленоида) электрон со скоростью $v$. Отклоняясь в магнитном поле, электрон спустя некоторое время покинул соленоид. Определите время движения внутри соленоида.
+\begin{sol}
+\hspace{0pt} \\
+\begin{minipage}{.65\textwidth}
+По второму закону Ньютона: $$qvB = m\dfrac{v^2}{r},$$ $\Rightarrow$ $r = \dfrac{mv}{qB}.$
+
+$\tan{\alpha} = \dfrac{R}{r}.$ Искомое время $t =\dfrac{s}{v},$ где $s$ -- длина дуги окружности, которую описывает электрон. 
+$$t = \dfrac{2r\alpha}{v} = \dfrac{2m}{eB}\arctan\left(\dfrac{eBR}{mv}\right).$$
+\end{minipage}
+\begin{minipage}{.35\textwidth}
+\centering
+\includestandalone{Pictures/ElectromagParticlesSolSolenoid}
+\end{minipage}
+\end{sol}
 \begin{ans}
 $t=\frac{2m}{eB}\arctan \left( \frac{eBR}{mv}\right)$
 \end{ans}
